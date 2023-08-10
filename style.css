@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+}
+
+nav img {
+  height: 2.25rem;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+}
+
+.cart p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-image: url("assets/kw-background.png");
+  background-size: cover;
+  background-position: right;
+  padding: 4% 5%;
+  color: white;
+}
+
+header h1 {
+  font-family: serif;
+  font-size: 3rem;
+}
+
+header span {
+  font-weight: 600;
+  margin-top: 0.4rem;
+}
+
+main {
+  margin: 2% 0 3%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-products {
+  padding: 3% 5% 4%;
+  gap: 1rem;
+}
+
+.row-products h2 {
+  font-family: serif;
+}
+
+.products {
+  gap: 1rem;
+  overflow-x: scroll;
+  padding-bottom: 1rem;
+}
+
+.book {
+  width: 10rem;
+  gap: 0.5rem;
+}
+
+.products p {
+  font-weight: 600;
+}
+
+.products span {
+  font-weight: 400;
+  font-size: 14px;
+  color: #5f5f5f;
+}
+
+.game {
+  width: 15rem;
+  gap: 0.5rem;
+}
+
+.action span {
+  font-weight: 700;
+  color: black;
+}
+
+.action button {
+  background-color: #6196ff;
+  color: white;
+  border: 0px;
+  padding: 0.4rem;
+  border-radius: 0.25rem;
+  gap: 0.25rem;
+}
+
+.action button:hover {
+  cursor: pointer;
+}
+
+.action img {
+  height: 1.2rem;
+}
+
+footer {
+  background-color: black;
+  padding: 4% 5%;
+  color: white;
+}
+
+.author span {
+  font-family: serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.author-details {
+  text-align: end;
+  gap: 0.25rem;
+}
+
+.author-details span {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.author-details p {
+  font-weight: 400;
+}
+
+footer img {
+  width: 8rem;
+  border-radius: 10rem;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 1rem;
+  }
+
+  nav img {
+    height: 1.75rem;
+  }
+
+  .cart p {
+    font-size: 1rem;
+  }
+}
