@@ -102,6 +102,7 @@ main {
   gap: 0.5rem;
 }
 
+.action div,
 .action span {
   font-weight: 700;
   color: black;
