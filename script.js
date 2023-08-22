@@ -4,6 +4,8 @@ const cartQuantityElem = document.querySelector(".cart-quantity");
 let cartQuantity = 0;
 const cartItems = [];
 
+var whatsappAPI = "https://api.whatsapp.com/send?phone=9190724XXXXX&text=";
+
 addToCartDelegation.addEventListener("click", (event) => {
   const clickedElement = event.target;
 
@@ -32,14 +34,18 @@ addToCartDelegation.addEventListener("click", (event) => {
 
 const cartBtn = document.querySelector(".cart");
 cartBtn.addEventListener("click", () => {
+  var orderItems = "";
+
   totalAmount = 0;
   cartItems.forEach((item) => {
-    console.log(`Item name: ${item.name} - Quantity: ${item.quantity}`);
+    orderItems += `Item name: ${item.name} %0AQuantity: ${item.quantity} %0A`;
     totalAmount += item.price * item.quantity;
   });
 
   let dollarAmount = Math.floor(totalAmount);
   let centsAmount = Math.round((totalAmount - dollarAmount) * 100);
 
-  console.log(`The total amount is $${dollarAmount} and ${centsAmount} cents`);
+  var orderSummary = `The total amount is $${dollarAmount} and ${centsAmount} cents`;
+
+  window.open(whatsappAPI + orderItems + orderSummary, "_blank");
 });

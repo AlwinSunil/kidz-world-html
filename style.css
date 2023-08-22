@@ -25,6 +25,10 @@ nav img {
   align-items: center;
 }
 
+.cart:hover {
+  cursor: pointer;
+}
+
 .cart p {
   font-size: 1.2rem;
   font-weight: 600;
